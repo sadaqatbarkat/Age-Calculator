@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gray-100 from-green-200 via-blue-200 to-purple-300 w-full h-screen flex justify-center items-center gap-2"
+  >
+    <div
+      id="calculator"
+      class="w-[40%] h-auto bg-white shadow-md rounded-lg py-6 px-4"
+    >
+      <div class="w-full flex justify-start items-center">
+        <input
+          type="date"
+          class="w-[80%] cursor-text mb-4 px-3 py-3 border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-600 focus:border-purple-700 sm:text-sm"
+          id="birthdate"
+          
+        />
+      </div>
+      <div class="flex justify-start items-center gap-1" id="errormessage">
+        <i class="fa-solid fa-circle-exclamation text-red-500 "></i>
+        <p class="text-red-500" id="error"></p>
+      </div>
+      <div id="hr" class="flex justify-start items-center">
+        <hr class="border border-gray-300" />
+        <button
+          class="text-lg w-16 h-16 text-white bg-purple-500 hover:bg-black font-medium rounded-full px-5 py-2.5 mb-2 transition-all duration-300"
+        >
+          <img src="images/image.png" alt="" class="w-10 h-10 "  />
+        </button>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-row gap-2">
+          <h1 id="years" class="text-1xl font-extrabold leading-none tracking-tight text-purple-600 md:text-6xl lg:text-6xl dark:text-white">- -</h1>
+          <h1 
+            class="text-1xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            years
+          </h1>
+        </div>
+        <div class="flex flex-row gap-2">
+			<h1 id="months" class="text-1xl font-extrabold leading-none tracking-tight text-purple-600  md:text-6xl lg:text-6xl dark:text-white">- -</h1>
+
+          <h1 
+            class="text-1xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            months
+          </h1>
+        </div>
+        <div class="flex flex-row gap-2">
+			<h1 id="date" class="text-1xl font-extrabold leading-none tracking-tight text-purple-600  md:text-6xl lg:text-6xl dark:text-white">- -</h1>
+          <h1
+              class="text-1xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            days
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
